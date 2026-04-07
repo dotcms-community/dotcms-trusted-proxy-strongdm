@@ -22,7 +22,7 @@ User → StrongDM (authenticates, injects x-sdm-token header) → dotCMS
                                               Create user if not exists + log in
 ```
 
-Here is an example OAuth plugin that follows a similar principle:
+Here is an example OAuth plugin that follows a similar pattern/principle - note this is not dotCMS specific, just to illustrate the pattern. 
 https://github.com/oauth2-proxy/oauth2-proxy
 
 
