@@ -22,12 +22,8 @@ User → StrongDM (authenticates, injects x-sdm-token header) → dotCMS
                                               Create user if not exists + log in
 ```
 
-This is what it could look like with an OAuth provider:
-
-<img width="1037" height="433" alt="image" src="https://github.com/user-attachments/assets/4a19cdde-7d8c-493a-a33a-81374325552c" />
-
-
-
+Here is an example OAuth plugin that follows a similar principle:
+https://github.com/oauth2-proxy/oauth2-proxy
 
 
 
