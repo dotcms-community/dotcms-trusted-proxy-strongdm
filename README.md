@@ -11,7 +11,8 @@ The core idea is a **trusted proxy pattern**:
 3. dotCMS intercepts the request, validates the token against StrongDM's API, and extracts user identity from the JWT payload
 4. If valid, dotCMS automatically creates the user (if they don't exist) and logs them in
 
-This means users never touch dotCMS's login form — authentication is handled entirely by the proxy.
+This means users never touch dotCMS's login form — authentication is handled entirely by the proxy. 
+
 
 ```
 User → StrongDM (authenticates, injects x-sdm-token header) → dotCMS
@@ -20,6 +21,15 @@ User → StrongDM (authenticates, injects x-sdm-token header) → dotCMS
                                                                   ↓
                                               Create user if not exists + log in
 ```
+
+This is what it could look like with an OAuth provider:
+
+<img width="1037" height="433" alt="image" src="https://github.com/user-attachments/assets/4a19cdde-7d8c-493a-a33a-81374325552c" />
+
+
+
+
+
 
 ## Implementation
 
